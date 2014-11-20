@@ -1,3 +1,14 @@
+/* line 6, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+#index {
+  width: 992px;
+  margin: auto;
+  text-align: center;
+}
+/* line 11, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+#index img {
+  width: 600px;
+  margin: 60px auto;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

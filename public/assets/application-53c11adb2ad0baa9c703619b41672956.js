@@ -11551,4 +11551,35 @@ return jQuery;
 
 
 
-;
+
+
+
+$(document).ready(function() {
+	
+	$(".section").hover(function() {
+		$("#index").toggleClass('hover');
+		if($( this ).hasClass('products')) {
+			$('#index').toggleClass('products-hover');
+		} else if($( this ).hasClass('solutions')) {
+			$('#index').toggleClass('solutions-hover')
+		} else if($( this ).hasClass('services')) {
+			$('#index').toggleClass('services-hover');			
+		} else if($( this ).hasClass('partners')) {
+			$('#index').toggleClass('partners-hover')			
+		};
+	});
+
+	$(".nav-list li").hover(function() {
+		$("#index").toggleClass('hover');
+		if($( this ).hasClass('products')) {
+			$('#index').toggleClass('products-hover');
+		} else if($( this ).hasClass('solutions')) {
+			$('#index').toggleClass('solutions-hover')
+		} else if($( this ).hasClass('services')) {
+			$('#index').toggleClass('services-hover');			
+		} else if($( this ).hasClass('partners')) {
+			$('#index').toggleClass('partners-hover')			
+		};
+	});
+
+});

@@ -5,11 +5,133 @@
 
 #index {
 	width: 100%;
-	margin: auto;
-	text-align: center;
+
+	#header {
+		height: 8em;
+		padding-top: 2em;
+		background: #eee;
+		position: relative;
+		z-index: 10;
+	}
 
 	img {
 		width: 100%;
 		margin: 0 auto;
 	}
+}
+
+#index #header #logo {
+	width: 100%;
+	max-width: 250px;
+}
+
+#index #header .form-horizontal {
+	border-radius:0;
+}
+
+#index #left-nav {
+	width: 12em;
+	border-right: 1px solid #cacaca;
+	position: fixed;
+	z-index: 5;
+	background: rgba(255,255,255,.8);
+	left: 0;
+	top:0;
+	height: 100%;
+	-webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+#index #left-nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#index #left-nav ul li {
+	padding: 10px 15px;
+	line-height: 18px;
+	color: #aaa;
+	-webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+#index.products-hover #left-nav .nav-products {
+	background: #eee;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.1em;
+}
+
+#index.solutions-hover #left-nav .nav-solutions {
+	background: #eee;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.1em;
+}
+
+#index.services-hover #left-nav .nav-services {
+	background: #eee;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.1em;
+}
+
+#index.partners-hover #left-nav .nav-partners {
+	background: #eee;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.1em;
+}
+
+#index #left-nav .nav-list {
+	margin-top: 10em;
+}
+
+#index #feature-area {
+	background: #cacaca;
+	height: 500px;
+}
+
+#index .section {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#index .section .box {
+	height: 200px;
+	width: 85%;
+	margin: auto;
+	background:#cacaca;
+	-webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+#index .section .box h1 {
+	margin-top: 0;
+}
+
+#index.products-hover .section.products .box {
+	height: 250px;
+	width: 90%;
+}
+
+#index.solutions-hover .section.solutions .box {
+	height: 250px;
+	width: 90%;
+}
+
+#index.services-hover .section.services .box {
+	height: 250px;
+	width: 90%;
+}
+
+#index.partners-hover .section.partners .box {
+	height: 250px;
+	width: 90%;
 }

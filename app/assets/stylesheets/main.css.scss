@@ -25,8 +25,22 @@
 	max-width: 250px;
 }
 
-#index #header .form-horizontal {
+#index #header .btn {
+	color: #666;
+	background: transparent;
+	box-shadow: none;
+}
+
+#index #header .btn:hover {
+	color: #aaa;
+}
+
+#index #header .form-horizontal input {
 	border-radius:0;
+}
+
+#index #header .contact-info p {
+	color: #aaa;
 }
 
 #index #left-nav {
@@ -65,41 +79,17 @@
     transition: all .1s ease-in-out;
 }
 
-#index.products-hover #left-nav .nav-products {
+#index.products-hover #left-nav .nav-products, #index.solutions-hover #left-nav .nav-solutions, #index.services-hover #left-nav .nav-services, 
+#index.partners-hover #left-nav .nav-partners, #index.customers-hover #left-nav .nav-customers, #index.company-hover #left-nav .nav-company,
+#index.careers-hover #left-nav .nav-careers, #index.resources-hover #left-nav .nav-resources, #index.support-hover #left-nav .nav-support,
+#index.contact-hover #left-nav .nav-contact {
 	background: #eee;
 }
 
-#index.products-hover #left-nav .nav-products a {
-	font-weight: bold;
-	color: #333;
-	font-size: 1.1em;
-}
-
-#index.solutions-hover #left-nav .nav-solutions {
-	background: #eee;
-}
-
-#index.solutions-hover #left-nav .nav-solutions a {
-	font-weight: bold;
-	color: #333;
-	font-size: 1.1em;
-}
-
-#index.services-hover #left-nav .nav-services {
-	background: #eee;
-}
-
-#index.services-hover #left-nav .nav-services a {
-	font-weight: bold;
-	color: #333;
-	font-size: 1.1em;
-}
-
-#index.partners-hover #left-nav .nav-partners {
-	background: #eee;
-}
-
-#index.partners-hover #left-nav .nav-partners a {
+#index.products-hover #left-nav .nav-products a, #index.solutions-hover #left-nav .nav-solutions a, #index.services-hover #left-nav .nav-services a, 
+#index.partners-hover #left-nav .nav-partners a, #index.customers-hover #left-nav .nav-customers a, #index.company-hover #left-nav .nav-company a,
+#index.careers-hover #left-nav .nav-careers a, #index.resources-hover #left-nav .nav-resources a, #index.support-hover #left-nav .nav-support a,
+#index.contact-hover #left-nav .nav-contact a {
 	font-weight: bold;
 	color: #333;
 	font-size: 1.1em;
@@ -132,24 +122,44 @@
 
 #index .section .box h1 {
 	margin-top: 0;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#index .section .lead-box {
+	background: #01526B;
+	padding: 15px;
 }
 
 #index.products-hover .section.products .box {
 	height: 250px;
 	width: 90%;
 }
+#index.products-hover .section.products .lead-box {
+	background: #99CC4C;
+}
 
 #index.solutions-hover .section.solutions .box {
 	height: 250px;
 	width: 90%;
+}
+#index.solutions-hover .section.solutions .lead-box {
+	background: #99CC4C;
 }
 
 #index.services-hover .section.services .box {
 	height: 250px;
 	width: 90%;
 }
+#index.services-hover .section.services .lead-box {
+	background: #99CC4C;
+}
 
 #index.partners-hover .section.partners .box {
 	height: 250px;
 	width: 90%;
+}
+#index.partners-hover .section.partners .lead-box {
+	background: #99CC4C;
 }

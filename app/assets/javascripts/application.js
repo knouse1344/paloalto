@@ -28,7 +28,19 @@ $(document).ready(function() {
 		} else if($( this ).hasClass('services')) {
 			$('#index').toggleClass('services-hover');			
 		} else if($( this ).hasClass('partners')) {
-			$('#index').toggleClass('partners-hover')			
+			$('#index').toggleClass('partners-hover');			
+		} else if($( this ).hasClass('customers')) {
+			$('#index').toggleClass('customers-hover');			
+		} else if($( this ).hasClass('company')) {
+			$('#index').toggleClass('company-hover');		
+		} else if($( this ).hasClass('careers')) {
+			$('#index').toggleClass('careers-hover');			
+		} else if($( this ).hasClass('resources')) {
+			$('#index').toggleClass('resources-hover');			
+		} else if($( this ).hasClass('support')) {
+			$('#index').toggleClass('support-hover');		
+		} else if($( this ).hasClass('contact')) {
+			$('#index').toggleClass('contact-hover');			
 		};
 	});
 
@@ -41,7 +53,19 @@ $(document).ready(function() {
 		} else if($( this ).hasClass('services')) {
 			$('#index').toggleClass('services-hover');			
 		} else if($( this ).hasClass('partners')) {
-			$('#index').toggleClass('partners-hover')			
+			$('#index').toggleClass('partners-hover');			
+		} else if($( this ).hasClass('customers')) {
+			$('#index').toggleClass('customers-hover');			
+		} else if($( this ).hasClass('company')) {
+			$('#index').toggleClass('company-hover');		
+		} else if($( this ).hasClass('careers')) {
+			$('#index').toggleClass('careers-hover');			
+		} else if($( this ).hasClass('resources')) {
+			$('#index').toggleClass('resources-hover');			
+		} else if($( this ).hasClass('support')) {
+			$('#index').toggleClass('support-hover');		
+		} else if($( this ).hasClass('contact')) {
+			$('#index').toggleClass('contact-hover');			
 		};
 	});
 

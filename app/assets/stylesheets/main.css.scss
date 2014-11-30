@@ -7,29 +7,44 @@
 	width: 100%;
 
 	#header {
-		height: 8em;
-		padding-top: 2em;
-		background: #fff;
+		background: #fafafa;
 		position: fixed;
 		width: 100%;
 		z-index: 10;
 	}
-
-	img {
-		width: 100%;
-		margin: 0 auto;
-	}
 }
 
 #index #header #logo {
+	width: 190px;
+	display: inline;
+}
+
+#index #header .vertical-center {
+	line-height: 8em;
+	position: relative;
+}
+
+#index #header .vertical-center .form-horizontal {
+	display: inline-block;
 	width: 100%;
-	max-width: 250px;
+	vertical-align: middle;
+}
+
+#index #header .vertical-center .form-horizontal .form-group {
+	margin: 0;
+}
+
+#index #header .btn-group {
+	line-height: 8em;
+	height: 8em;
 }
 
 #index #header .btn {
 	color: #666;
 	background: transparent;
 	box-shadow: none;
+	line-height: 8em;
+	padding: 0 15px;
 }
 
 #index #header .btn:hover {
@@ -40,8 +55,18 @@
 	border-radius:0;
 }
 
+#index #header .contact-info {
+	white-space: nowrap;
+}
+
+#index #header .contact-info i {
+	padding: 0 5px;
+}
+
 #index #header .contact-info p {
 	color: #aaa;
+	line-height: 8em;
+	margin: 0;
 }
 
 #index #left-nav {
@@ -128,8 +153,8 @@
 }
 
 #index .section .hover-left {
-	background: rgba(0,0,0,.25);
-	width: 40%;
+	background: rgb(167, 192, 144);
+	width: 15%;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -138,8 +163,8 @@
 }
 
 #index .section .hover-right {
-	background: rgba(0,0,0,.25);
-	width: 40%;
+	background: rgb(167, 192, 144);
+	width: 15%;
 	height: 100%;
 	position: absolute;
 	top: 0;

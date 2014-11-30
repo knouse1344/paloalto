@@ -47,6 +47,15 @@ h1, h2, h3, h4, h5, p, span {
 	height: 8em;
 }
 
+#index #header .btn-group .fb-icon {
+	width: 50px;
+	margin-right: 10px;
+}
+
+#index #header .btn-group .dropdown-menu {
+	top: 80%;
+}
+
 #index #header .btn {
 	color: #666;
 	background: transparent;
@@ -65,11 +74,11 @@ h1, h2, h3, h4, h5, p, span {
 
 #index #header .form-horizontal .go-btn {
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 16px;
+	top: 2%;
 	background: #A2D85E;
 	color: #fff;
-	height: 100%;
+	height: 96%;
 	padding: 10px 10px;	
 	line-height: 100%;
 	font-weight: bold;
@@ -82,6 +91,7 @@ h1, h2, h3, h4, h5, p, span {
 
 #index #header .contact-info {
 	white-space: nowrap;
+	text-align: right;
 }
 
 #index #header .contact-info i {
@@ -113,6 +123,7 @@ h1, h2, h3, h4, h5, p, span {
 #index #left-nav ul li a {
 	text-decoration: none;
 	color: #aaa;
+	font-family: 'Lato', sans-serif;
 	display: block;
 	width: 100%;
 	padding: 15px 15px 15px 30px;
@@ -156,9 +167,12 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index #feature-area {
-	background: #cacaca;
+	background: url('/assets/banner.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
 	height: 300px;
 	position: relative;
+	overflow: hidden;
 }
 
 #index #feature-area .info-section {
@@ -197,6 +211,11 @@ h1, h2, h3, h4, h5, p, span {
 	right: 0;
 	background: #92B653;
 	text-align: center;
+	cursor: pointer;
+}
+
+#index #feature-area img {
+	width: 100%;
 }
 
 #index .section {
@@ -217,7 +236,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .section .hover-left {
-	background: rgba(167, 192, 144, .5);
+	background: rgba(167, 192, 144, .35);
 	width: 15%;
 	height: 100%;
 	text-align: center;
@@ -225,21 +244,41 @@ h1, h2, h3, h4, h5, p, span {
 	top: 0;
 	left: 0;
 	z-index: 5;
+	-webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 #index .section .hover-left h1 {
 	color: rgb(167, 192, 144);
+	margin-top: 3em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.75em;
+	font-weight: 700;
+}
+
+#index .section .hover-right h1 {
+	margin: 0;
+	font-size: 1.75em;
+	color: #fff;
 }
 
 #index .section .hover-left i, #index .section .hover-right i {
-	font-size: 1.9em;
-	line-height: 250px;
-	color: rgb(167, 192, 144);
+	font-size: 1.25em;
+	padding-top:.5em;
+	color: #fff;
 	text-align: center;
 }
 
+#index .section .hover-right i {
+	line-height: 250px;
+	padding-top: 0;
+}
+
+
 #index .section .hover-right {
-	background: rgba(167, 192, 144, .5);
 	width: 15%;
 	height: 100%;
 	text-align: center;
@@ -247,6 +286,11 @@ h1, h2, h3, h4, h5, p, span {
 	top: 0;
 	right: 0;
 	z-index: 5;
+	background: rgba(167, 192, 144, .35);
+	-webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;	
 }
 
 #index .section .element {
@@ -317,43 +361,54 @@ h1, h2, h3, h4, h5, p, span {
 	right: 0;
 	background: #92B653;
 	text-align: center;
+	cursor: pointer;
 }
 
+#index .section .info-section .call:hover {
+	opacity: .75;
+}
+
+#index .section .info-section .call i {
+	font-size: .8em;
+	padding-left: 10px;
+}
+
+#index .section .box img {
+	width: 100%;
+}
 #index .section .lead-box {
 	background: #fff;
 	padding: 15px;
 }
 
-#index .section .hover-left:hover, #index .section .hover-right:hover {
-	background: rgba(167, 192, 144, 1);;
+#index .section .hover-left:hover {
+	background: -moz-linear-gradient(right, rgba(146,170,93,0) 0%, rgba(146,170,93,1) 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, right top, right top, color-stop(0%,rgba(146,170,93,0)), color-stop(99%,rgba(146,170,93,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(right, rgba(146,170,93,0) 0%,rgba(146,170,93,1) 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(right, rgba(146,170,93,0) 0%,rgba(146,170,93,1) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(right, rgba(146,170,93,0) 0%,rgba(146,170,93,1) 99%); /* IE10+ */
+	background: linear-gradient(to left, rgba(146,170,93,0) 0%,rgba(146,170,93,1) 99%); /* W3C */
+}
+
+#index .section .hover-right:hover {
+	background: -moz-linear-gradient(left, rgba(146,170,93,0) 0%, rgba(146,170,93,1) 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(146,170,93,0)), color-stop(99%,rgba(146,170,93,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(146,170,93,0) 0%,rgba(146,170,93,1) 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(146,170,93,0) 0%,rgba(146,170,93,1) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(146,170,93,0) 0%,rgba(146,170,93,1) 99%); /* IE10+ */
+	background: linear-gradient(to right, rgba(146,170,93,0) 0%,rgba(146,170,93,1) 99%); /* W3C */
 }
 
 #index .section .hover-left:hover i, #index .section .hover-right:hover i, #index .section .hover-left:hover h1 {
-	color: #333;
+	color: #fff;
 }
 
 #index.products-hover .section.products .hover-left {
 	background: #99CC4C;
 }
 
-#index.products-hover .section.products .hover-left h1 {
-	color: #222;
-}
-
-#index.products-hover .section.products .hover-left i {
-	color: #222;
-}
-
 #index.solutions-hover .section.solutions .hover-left {
 	background: #99CC4C;
-}
-
-#index.solutions-hover .section.solutions .hover-left h1  {
-	color: #222;
-}
-
-#index.solutions-hover .section.solutions .hover-left i  {
-	color: #222;
 }
 
 #index.services-hover .section.services .hover-left {
@@ -364,12 +419,63 @@ h1, h2, h3, h4, h5, p, span {
 	background: #99CC4C;
 }
 
+#index.customers-hover .section.customers .hover-left{
+	background: #99CC4C;
+}
+
+#index.company-hover .section.company .hover-left{
+	background: #99CC4C;
+}
+
+#index.careers-hover .section.careers .hover-left{
+	background: #99CC4C;
+}
+
+#index.resources-hover .section.resources .hover-left{
+	background: #99CC4C;
+}
+
+#index.support-hover .section.support .hover-left{
+	background: #99CC4C;
+}
+
+#index.contact-hover .section.contact .hover-left{
+	background: #99CC4C;
+}
 
 footer {
 	width: 100%;
 	background: #eee;
 	line-height: 4em;
-	height: 4em;
 	position: relative;
 	z-index: 25;
+}
+
+footer p, footer span {
+	color: #aaa;
+	margin: 0;
+}
+
+footer .footer-links {
+	list-style-type: none;
+	margin: 0;
+}
+
+footer .footer-links li {
+	padding: 0 10px;
+	display: inline-block;
+}
+
+footer .footer-links li a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+
+footer .footer-links li a:hover {
+	opacity: .5;
+}
+
+footer i {
+	padding-right: 10px;
 }

@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .section .hover-left {
-	background: transparent;
+	background: rgba(167, 192, 144, .5);
 	width: 15%;
 	height: 100%;
 	text-align: center;
@@ -239,9 +239,10 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .section .hover-right {
-	background: rgb(167, 192, 144);
+	background: rgba(167, 192, 144, .5);
 	width: 15%;
 	height: 100%;
+	text-align: center;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -323,8 +324,12 @@ h1, h2, h3, h4, h5, p, span {
 	padding: 15px;
 }
 
-#index .section .hover-left:hover {
-	opacity: .5;
+#index .section .hover-left:hover, #index .section .hover-right:hover {
+	background: rgba(167, 192, 144, 1);;
+}
+
+#index .section .hover-left:hover i, #index .section .hover-right:hover i, #index .section .hover-left:hover h1 {
+	color: #333;
 }
 
 #index.products-hover .section.products .hover-left {

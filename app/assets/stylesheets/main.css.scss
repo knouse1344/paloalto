@@ -79,6 +79,10 @@
     transition: all .1s ease-in-out;
 }
 
+#index .main-contain {
+	padding-left: 15em;
+}
+
 #index.products-hover #left-nav .nav-products, #index.solutions-hover #left-nav .nav-solutions, #index.services-hover #left-nav .nav-services, 
 #index.partners-hover #left-nav .nav-partners, #index.customers-hover #left-nav .nav-customers, #index.company-hover #left-nav .nav-company,
 #index.careers-hover #left-nav .nav-careers, #index.resources-hover #left-nav .nav-resources, #index.support-hover #left-nav .nav-support,
@@ -101,7 +105,7 @@
 
 #index #feature-area {
 	background: #cacaca;
-	height: 500px;
+	height: 300px;
 }
 
 #index .section {
@@ -111,7 +115,7 @@
 
 #index .section .box {
 	height: 200px;
-	width: 85%;
+	width: 100%;
 	margin: auto;
 	background:#cacaca;
 	-webkit-transition: all .1s ease-in-out;
@@ -133,32 +137,28 @@
 }
 
 #index.products-hover .section.products .box {
-	height: 250px;
-	width: 90%;
+
 }
 #index.products-hover .section.products .lead-box {
 	background: #99CC4C;
 }
 
 #index.solutions-hover .section.solutions .box {
-	height: 250px;
-	width: 90%;
+
 }
 #index.solutions-hover .section.solutions .lead-box {
 	background: #99CC4C;
 }
 
 #index.services-hover .section.services .box {
-	height: 250px;
-	width: 90%;
+
 }
 #index.services-hover .section.services .lead-box {
 	background: #99CC4C;
 }
 
 #index.partners-hover .section.partners .box {
-	height: 250px;
-	width: 90%;
+
 }
 #index.partners-hover .section.partners .lead-box {
 	background: #99CC4C;

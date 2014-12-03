@@ -261,10 +261,14 @@ h1, h2, h3, h4, h5, p, span {
   width: 100%;
   height: 100%;
   position: relative;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
   margin-bottom: -15px;
 }
 
-/* line 238, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 242, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left {
   background: rgba(167, 192, 144, 0.35);
   width: 15%;
@@ -280,7 +284,7 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 253, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 257, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left h1 {
   color: #a7c090;
   margin-top: 3em;
@@ -290,14 +294,14 @@ h1, h2, h3, h4, h5, p, span {
   font-weight: 700;
 }
 
-/* line 262, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 266, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right h1 {
   margin: 0;
   font-size: 1.75em;
   color: #fff;
 }
 
-/* line 268, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 272, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left i, #index .section .hover-right i {
   font-size: 1.25em;
   padding-top: .5em;
@@ -305,13 +309,13 @@ h1, h2, h3, h4, h5, p, span {
   text-align: center;
 }
 
-/* line 275, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 279, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right i {
   line-height: 250px;
   padding-top: 0;
 }
 
-/* line 281, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 285, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right {
   width: 15%;
   height: 100%;
@@ -327,20 +331,25 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 296, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 300, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .element {
   width: 250px;
   height: 250px;
   vertical-align: top;
   display: inline-block;
   margin-right: 30px;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
-/* line 304, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 312, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .box {
-  height: 250px;
+  height: 100%;
   width: 100%;
   margin: auto;
+  overflow: hidden;
   position: relative;
   background: #cacaca;
   -webkit-transition: all .1s ease-in-out;
@@ -349,7 +358,7 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 316, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 325, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .box h1 {
   margin-top: 0;
   float: left;
@@ -358,7 +367,7 @@ h1, h2, h3, h4, h5, p, span {
   text-transform: uppercase;
 }
 
-/* line 324, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 333, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .info-section {
   width: 100%;
   height: 150px;
@@ -370,7 +379,7 @@ h1, h2, h3, h4, h5, p, span {
   background: rgba(0, 0, 0, 0.75);
 }
 
-/* line 335, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 344, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .info-section h2 {
   color: #fff;
   font-weight: 700;
@@ -380,7 +389,7 @@ h1, h2, h3, h4, h5, p, span {
   line-height: 1.3em;
 }
 
-/* line 344, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 353, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .info-section p {
   color: #cacaca;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -389,7 +398,7 @@ h1, h2, h3, h4, h5, p, span {
   font-size: .8em;
 }
 
-/* line 352, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 361, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .info-section .call {
   width: 70%;
   font-size: 1.2em;
@@ -405,29 +414,30 @@ h1, h2, h3, h4, h5, p, span {
   cursor: pointer;
 }
 
-/* line 367, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 376, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .info-section .call:hover {
   opacity: .75;
 }
 
-/* line 371, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 380, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .info-section .call i {
   font-size: .8em;
   padding-left: 10px;
 }
 
-/* line 376, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 385, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .box img {
-  width: 100%;
+  height: 100%;
+  width: auto;
 }
 
-/* line 379, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 389, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .lead-box {
   background: #fff;
   padding: 15px;
 }
 
-/* line 384, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 394, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left:hover {
   background: -moz-linear-gradient(right, rgba(146, 170, 93, 0) 0%, #92aa5d 99%);
   /* FF3.6+ */
@@ -443,7 +453,7 @@ h1, h2, h3, h4, h5, p, span {
   /* W3C */
 }
 
-/* line 393, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 403, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right:hover {
   background: -moz-linear-gradient(left, rgba(146, 170, 93, 0) 0%, #92aa5d 99%);
   /* FF3.6+ */
@@ -459,62 +469,41 @@ h1, h2, h3, h4, h5, p, span {
   /* W3C */
 }
 
-/* line 402, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 412, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left:hover i, #index .section .hover-right:hover i, #index .section .hover-left:hover h1 {
   color: #fff;
 }
 
-/* line 406, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.products-hover .section.products .hover-left {
-  background: #99CC4C;
+/* line 416, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+#index.hover .section .scrollfix {
+  opacity: .2;
 }
 
-/* line 410, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.solutions-hover .section.solutions .hover-left {
-  background: #99CC4C;
-}
-
-/* line 414, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.services-hover .section.services .hover-left {
-  background: #99CC4C;
-}
-
-/* line 418, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.partners-hover .section.partners .hover-left {
-  background: #99CC4C;
-}
-
-/* line 422, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.customers-hover .section.customers .hover-left {
-  background: #99CC4C;
-}
-
-/* line 426, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.company-hover .section.company .hover-left {
-  background: #99CC4C;
-}
-
-/* line 430, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.careers-hover .section.careers .hover-left {
-  background: #99CC4C;
-}
-
-/* line 434, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.resources-hover .section.resources .hover-left {
-  background: #99CC4C;
-}
-
-/* line 438, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
-#index.support-hover .section.support .hover-left {
-  background: #99CC4C;
-}
-
-/* line 442, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 423, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+#index.products-hover .section.products .hover-left, #index.solutions-hover .section.solutions .hover-left, #index.services-hover .section.services .hover-left,
+#index.partners-hover .section.partners .hover-left, #index.customers-hover .section.customers .hover-left, #index.company-hover .section.company .hover-left,
+#index.careers-hover .section.careers .hover-left, #index.resources-hover .section.resources .hover-left, #index.support-hover .section.support .hover-left,
 #index.contact-hover .section.contact .hover-left {
   background: #99CC4C;
 }
 
-/* line 446, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 430, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+#index.products-hover .section.products .scrollfix, #index.solutions-hover .section.solutions .scrollfix, #index.services-hover .section.services .scrollfix,
+#index.partners-hover .section.partners .scrollfix, #index.customers-hover .section.customers .scrollfix, #index.company-hover .section.company .scrollfix,
+#index.careers-hover .section.careers .scrollfix, #index.resources-hover .section.resources .scrollfix, #index.support-hover .section.support .scrollfix,
+#index.contact-hover .section.contact .scrollfix {
+  opacity: 1;
+}
+
+/* line 437, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+#index.products-hover .section.products .element, #index.solutions-hover .section.solutions .element, #index.services-hover .section.services .element,
+#index.partners-hover .section.partners .element, #index.customers-hover .section.customers .element, #index.company-hover .section.company .element,
+#index.careers-hover .section.careers .element, #index.resources-hover .section.resources .element, #index.support-hover .section.support .element,
+#index.contact-hover .section.contact .element {
+  height: 300px;
+}
+
+/* line 441, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 footer {
   width: 100%;
   background: #eee;
@@ -523,36 +512,36 @@ footer {
   z-index: 25;
 }
 
-/* line 454, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 449, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 footer p, footer span {
   color: #aaa;
   margin: 0;
 }
 
-/* line 459, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 454, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 footer .footer-links {
   list-style-type: none;
   margin: 0;
 }
 
-/* line 464, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 459, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 footer .footer-links li {
   padding: 0 10px;
   display: inline-block;
 }
 
-/* line 469, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 464, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 footer .footer-links li a {
   color: #aaa;
   text-decoration: none;
 }
 
-/* line 475, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 470, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 footer .footer-links li a:hover {
   opacity: .5;
 }
 
-/* line 479, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
+/* line 474, /home/bryan/Documents/paloalto/app/assets/stylesheets/main.css.scss */
 footer i {
   padding-right: 10px;
 }

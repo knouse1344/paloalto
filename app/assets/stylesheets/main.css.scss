@@ -232,6 +232,10 @@ h1, h2, h3, h4, h5, p, span {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	-webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
 	margin-bottom: -15px;
 }
 
@@ -299,12 +303,17 @@ h1, h2, h3, h4, h5, p, span {
 	vertical-align: top;
 	display: inline-block;
 	margin-right: 30px;
+	-webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 #index .section .box {
-	height: 250px;
+	height: 100%;
 	width: 100%;
 	margin: auto;
+	overflow: hidden;
 	position: relative;
 	background:#cacaca;
 	-webkit-transition: all .1s ease-in-out;
@@ -374,7 +383,8 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .section .box img {
-	width: 100%;
+	height: 100%;
+	width: auto;
 }
 #index .section .lead-box {
 	background: #fff;
@@ -403,44 +413,29 @@ h1, h2, h3, h4, h5, p, span {
 	color: #fff;
 }
 
-#index.products-hover .section.products .hover-left {
+#index.hover .section .scrollfix {
+	opacity: .2;
+}
+
+#index.products-hover .section.products .hover-left, #index.solutions-hover .section.solutions .hover-left, #index.services-hover .section.services .hover-left, 
+#index.partners-hover .section.partners .hover-left, #index.customers-hover .section.customers .hover-left, #index.company-hover .section.company .hover-left, 
+#index.careers-hover .section.careers .hover-left, #index.resources-hover .section.resources .hover-left, #index.support-hover .section.support .hover-left, 
+#index.contact-hover .section.contact .hover-left {
 	background: #99CC4C;
 }
 
-#index.solutions-hover .section.solutions .hover-left {
-	background: #99CC4C;
+#index.products-hover .section.products .scrollfix, #index.solutions-hover .section.solutions .scrollfix, #index.services-hover .section.services .scrollfix, 
+#index.partners-hover .section.partners .scrollfix, #index.customers-hover .section.customers .scrollfix, #index.company-hover .section.company .scrollfix, 
+#index.careers-hover .section.careers .scrollfix, #index.resources-hover .section.resources .scrollfix, #index.support-hover .section.support .scrollfix, 
+#index.contact-hover .section.contact .scrollfix {
+	opacity: 1;
 }
 
-#index.services-hover .section.services .hover-left {
-	background: #99CC4C;
-}
-
-#index.partners-hover .section.partners .hover-left{
-	background: #99CC4C;
-}
-
-#index.customers-hover .section.customers .hover-left{
-	background: #99CC4C;
-}
-
-#index.company-hover .section.company .hover-left{
-	background: #99CC4C;
-}
-
-#index.careers-hover .section.careers .hover-left{
-	background: #99CC4C;
-}
-
-#index.resources-hover .section.resources .hover-left{
-	background: #99CC4C;
-}
-
-#index.support-hover .section.support .hover-left{
-	background: #99CC4C;
-}
-
-#index.contact-hover .section.contact .hover-left{
-	background: #99CC4C;
+#index.products-hover .section.products .element, #index.solutions-hover .section.solutions .element, #index.services-hover .section.services .element, 
+#index.partners-hover .section.partners .element, #index.customers-hover .section.customers .element, #index.company-hover .section.company .element, 
+#index.careers-hover .section.careers .element, #index.resources-hover .section.resources .element, #index.support-hover .section.support .element, 
+#index.contact-hover .section.contact .element {
+	height: 300px;
 }
 
 footer {

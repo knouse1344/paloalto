@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, p, span {
 	width: 12em;
 	border-right: 1px solid #cacaca;
 	position: fixed;
-	z-index: 5;
+	z-index: 9;
 	background: rgba(255,255,255,.8);
 	left: 0;
 	top:0;
@@ -143,7 +143,8 @@ h1, h2, h3, h4, h5, p, span {
 
 #index .main-contain {
 	padding-left: 15em;
-	padding-top: 9em;
+	padding-top: 8em;
+	position: relative;
 }
 
 #index.products-hover #left-nav .nav-products, #index.solutions-hover #left-nav .nav-solutions, #index.services-hover #left-nav .nav-services, 
@@ -166,6 +167,16 @@ h1, h2, h3, h4, h5, p, span {
 	margin-top: 10em;
 }
 
+#index .feature-row {
+	position: fixed;
+	padding-left: 15em;
+	padding-bottom: 2em;
+	background: #fff;
+	width: 100%;
+	z-index: 7;
+	left: 0;
+}
+
 #index #feature-area {
 	background: url('/assets/banner.jpg') no-repeat;
 	background-size: cover;
@@ -173,6 +184,35 @@ h1, h2, h3, h4, h5, p, span {
 	height: 300px;
 	position: relative;
 	overflow: hidden;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#index.products-hover #feature-area {
+	background: url('/assets/cartoon_bg.png');
+}
+#index.solutions-hover #feature-area {
+	background: url('/assets/palo_bg.jpg');
+}
+#index.services-hover #feature-area {
+	background: url('/assets/server_bg.jpg');
+}
+#index.partners-hover #feature-area {
+	background: url('/assets/palo_bg.jpg');
+}
+#index.customers-hover #feature-area {
+	background: url('/assets/cartoon_bg.png');
+}
+#index.company-hover #feature-area {
+	background: url('/assets/palo_bg.jpg');
+}
+#index.careers-hover #feature-area {
+	background: url('/assets/server_bg.jpg');
+}
+#index.resources-hover #feature-area {
+	background: url('/assets/cartoon_bg.jpg');
 }
 
 #index #feature-area .info-section {
@@ -220,8 +260,7 @@ h1, h2, h3, h4, h5, p, span {
 
 #index .section {
 	padding: 0 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin: 15px 0 15px -15px;
 	white-space: nowrap;
 	overflow: hidden;
 	position: relative;
@@ -415,6 +454,10 @@ h1, h2, h3, h4, h5, p, span {
 
 #index.hover .section .scrollfix {
 	opacity: .2;
+}
+
+#index #row-recommended {
+	margin-top: 325px;
 }
 
 #index.products-hover .section.products .hover-left, #index.solutions-hover .section.solutions .hover-left, #index.services-hover .section.services .hover-left, 

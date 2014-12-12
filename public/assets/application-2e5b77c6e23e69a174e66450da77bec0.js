@@ -11562,7 +11562,7 @@ $(document).ready(function() {
 		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		  if (target.length) {
 		    $('html,body').animate({
-		      scrollTop: target.offset().top - 150
+		      scrollTop: target.offset().top - 450
 		    }, 1000);
 		    return false;
 		  }
@@ -11688,6 +11688,8 @@ $(document).ready(function() {
 		} else if($( this ).parent().hasClass('contact')) {
 			$('#index').removeClass();
 			$('#index').toggleClass('contact-hover');			
+		} else if($( this ).parent().hasClass('home')) {
+			$('#index').removeClass();			
 		};
 		$("#index").toggleClass('hover');
 	});

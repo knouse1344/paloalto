@@ -144,7 +144,10 @@ h1, h2, h3, h4, h5, p, span {
 #index .main-contain {
 	padding-left: 15em;
 	padding-top: 8em;
-	position: relative;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
 #index.products-hover #left-nav .nav-products, #index.solutions-hover #left-nav .nav-solutions, #index.services-hover #left-nav .nav-services, 
@@ -191,28 +194,54 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index.products-hover #feature-area {
-	background: url('/assets/cartoon_bg.png');
+	background: url('/assets/feature_products.jpg');
+	background-size: cover;
+	background-position: center;
 }
 #index.solutions-hover #feature-area {
-	background: url('/assets/palo_bg.jpg');
+	background: url('/assets/feature_solutions.jpg');
+	background-size: cover;
+	background-position: center;
 }
 #index.services-hover #feature-area {
-	background: url('/assets/server_bg.jpg');
+	background: url('/assets/feature_services.jpg');
+	background-size: cover;
+	background-position: center;
 }
 #index.partners-hover #feature-area {
-	background: url('/assets/palo_bg.jpg');
+	background: url('/assets/feature_partners.jpg');
+	background-size: cover;
+	background-position: center;
 }
 #index.customers-hover #feature-area {
-	background: url('/assets/cartoon_bg.png');
+	background: url('/assets/feature_customers.jpg');
+	background-size: cover;
+	background-position: center;
 }
 #index.company-hover #feature-area {
-	background: url('/assets/palo_bg.jpg');
+	background: url('/assets/feature_company.jpg');
+	background-size: cover;
+	background-position: center;
 }
 #index.careers-hover #feature-area {
-	background: url('/assets/server_bg.jpg');
+	background: url('/assets/feature_careers.jpg');
+	background-size: cover;
+	background-position: center;
 }
 #index.resources-hover #feature-area {
-	background: url('/assets/cartoon_bg.jpg');
+	background: url('/assets/feature_resources.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#index.support-hover #feature-area {
+	background: url('/assets/feature_support.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#index.contact-hover #feature-area {
+	background: url('/assets/feature_contact.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 #index #feature-area .info-section {
@@ -259,11 +288,18 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .section {
-	padding: 0 15px;
-	margin: 15px 0 15px -15px;
+	padding: 0 15px 0 15em;
+	margin: 15px 0 15px -15em;
+	width: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	position: relative;
+	position: absolute;
+	bottom: 15px;
+	opacity: 0;
+	-webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
 }
 
 #index .section .scrollfix {
@@ -271,11 +307,11 @@ h1, h2, h3, h4, h5, p, span {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	margin-bottom: -15px;
 	-webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
-	margin-bottom: -15px;
 }
 
 #index .section .hover-left {
@@ -285,7 +321,7 @@ h1, h2, h3, h4, h5, p, span {
 	text-align: center;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 15em;
 	z-index: 5;
 	-webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
@@ -327,7 +363,7 @@ h1, h2, h3, h4, h5, p, span {
 	text-align: center;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 15px;
 	z-index: 5;
 	background: rgba(167, 192, 144, .35);
 	-webkit-transition: all .1s ease-in-out;
@@ -341,6 +377,7 @@ h1, h2, h3, h4, h5, p, span {
 	height: 250px;
 	vertical-align: top;
 	display: inline-block;
+	margin-bottom: 15px;
 	margin-right: 30px;
 	-webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
@@ -467,6 +504,13 @@ h1, h2, h3, h4, h5, p, span {
 	background: #99CC4C;
 }
 
+#index.products-hover .section.products, #index.solutions-hover .section.solutions, #index.services-hover .section.services, 
+#index.partners-hover .section.partners, #index.customers-hover .section.customers, #index.company-hover .section.company, 
+#index.careers-hover .section.careers, #index.resources-hover .section.resources, #index.support-hover .section.support, 
+#index.contact-hover .section.contact {
+	opacity: 1;
+}
+
 #index.products-hover .section.products .scrollfix, #index.solutions-hover .section.solutions .scrollfix, #index.services-hover .section.services .scrollfix, 
 #index.partners-hover .section.partners .scrollfix, #index.customers-hover .section.customers .scrollfix, #index.company-hover .section.company .scrollfix, 
 #index.careers-hover .section.careers .scrollfix, #index.resources-hover .section.resources .scrollfix, #index.support-hover .section.support .scrollfix, 
@@ -478,7 +522,7 @@ h1, h2, h3, h4, h5, p, span {
 #index.partners-hover .section.partners .element, #index.customers-hover .section.customers .element, #index.company-hover .section.company .element, 
 #index.careers-hover .section.careers .element, #index.resources-hover .section.resources .element, #index.support-hover .section.support .element, 
 #index.contact-hover .section.contact .element {
-	height: 300px;
+
 }
 
 footer {

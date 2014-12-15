@@ -201,10 +201,10 @@ h1, h2, h3, h4, h5, p, span {
 
 /* line 189, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.recommended-hover #left-nav .nav-recommended a i.chevron, #index.popular-hover #left-nav .nav-popular a i.chevron,
-#index.products-hover #left-nav .nav-products a i.chevron, #index.solutions-hover #left-nav .nav-solutions a i, #index.services-hover #left-nav .nav-services a i,
-#index.partners-hover #left-nav .nav-partners a i, #index.customers-hover #left-nav .nav-customers a i, #index.company-hover #left-nav .nav-company a i,
-#index.careers-hover #left-nav .nav-careers a i, #index.resources-hover #left-nav .nav-resources a i, #index.support-hover #left-nav .nav-support a i,
-#index.contact-hover #left-nav .nav-contact a i {
+#index.products-hover #left-nav .nav-products a i.chevron, #index.solutions-hover #left-nav .nav-solutions a i.chevron, #index.services-hover #left-nav .nav-services a i.chevron,
+#index.partners-hover #left-nav .nav-partners a i.chevron, #index.customers-hover #left-nav .nav-customers a i.chevron, #index.company-hover #left-nav .nav-company a i.chevron,
+#index.careers-hover #left-nav .nav-careers a i.chevron, #index.resources-hover #left-nav .nav-resources a i.chevron, #index.support-hover #left-nav .nav-support a i.chevron,
+#index.contact-hover #left-nav .nav-contact a i.chevron {
   -ms-transform: rotate(90deg);
   /* IE 9 */
   -webkit-transform: rotate(90deg);

@@ -382,7 +382,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .section {
-	padding: 0 15px 0 15em;
+	padding: 0 15px 0 14em;
 	margin: 15px 0 15px -15em;
 	width: 100%;
 	white-space: nowrap;
@@ -423,6 +423,10 @@ h1, h2, h3, h4, h5, p, span {
     transition: all .1s ease-in-out;
 }
 
+#index .section .hover-left:hover {
+	opacity: .5;
+}
+
 #index .section .hover-left h1 {
 	color: rgb(167, 192, 144);
 	margin-top: 3em;
@@ -435,12 +439,12 @@ h1, h2, h3, h4, h5, p, span {
 
 #index .section .hover-right h1 {
 	margin: 0;
-	font-size: 1.75em;
+	font-size: 1.25em;
 	color: #fff;
 }
 
 #index .section .hover-left i, #index .section .hover-right i {
-	font-size: 1.25em;
+	font-size: 3.5em;
 	padding-top:.5em;
 	color: #fff;
 	text-align: center;

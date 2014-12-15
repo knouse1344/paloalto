@@ -127,12 +127,17 @@ h1, h2, h3, h4, h5, p, span {
 	font-family: 'Lato', sans-serif;
 	display: block;
 	width: 100%;
-	padding: 15px 15px 15px 30px;
+	padding: 5px 15px 5px 30px;
 	line-height: 18px;
+	font-size: .85em;
 	-webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;	
+}
+
+#index #left-nav ul li a:hover {
+	color: #333;
 }
 
 #index #left-nav ul li {
@@ -170,7 +175,7 @@ h1, h2, h3, h4, h5, p, span {
 #index.partners-hover #left-nav li.nav-partners ul, #index.customers-hover #left-nav li.nav-customers ul, #index.company-hover #left-nav li.nav-company ul,
 #index.careers-hover #left-nav li.nav-careers ul, #index.resources-hover #left-nav li.nav-resources ul, #index.support-hover #left-nav li.nav-support ul,
 #index.contact-hover #left-nav li.nav-contact ul {
-	height: 200px;
+	height: 120px;
 }
 
 #index.recommended-hover #left-nav .nav-recommended a.parent-link, #index.popular-hover #left-nav .nav-popular a.parent-link,
@@ -203,11 +208,15 @@ h1, h2, h3, h4, h5, p, span {
 	position: relative;
 	top: 0;
 	width: 100%;
-	border: 0;
+	border-top: 2px solid #fafafa;
 	-webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+}
+
+#index #left-nav .nav-list li:last-child {
+	border-bottom: 2px solid #fafafa;
 }
 
 #index #left-nav .nav-list li a i.chevron {

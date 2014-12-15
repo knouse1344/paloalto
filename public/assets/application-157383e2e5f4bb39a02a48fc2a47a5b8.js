@@ -11626,6 +11626,12 @@ $(document).ready(function() {
 		if($( this ).hasClass('products')) {
 			$('#index').removeClass();
 			$('#index').toggleClass('products-hover');
+		} else if($( this ).hasClass('recommended')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('recommended-hover')
+		} else if($( this ).hasClass('popular')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('popular-hover')
 		} else if($( this ).hasClass('solutions')) {
 			$('#index').removeClass();
 			$('#index').toggleClass('solutions-hover')
@@ -11661,6 +11667,12 @@ $(document).ready(function() {
 		if($( this ).parent().hasClass('products')) {
 			$('#index').removeClass();
 			$('#index').toggleClass('products-hover');
+		} else if($( this ).parent().hasClass('recommended')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('recommended-hover')
+		} else if($( this ).parent().hasClass('popular')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('popular-hover')
 		} else if($( this ).parent().hasClass('solutions')) {
 			$('#index').removeClass();
 			$('#index').toggleClass('solutions-hover')

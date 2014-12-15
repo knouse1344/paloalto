@@ -92,16 +92,21 @@ h1, h2, h3, h4, h5, p, span {
 #index #header .contact-info {
 	white-space: nowrap;
 	text-align: right;
+	line-height: 8em;
 }
 
 #index #header .contact-info i {
 	padding: 0 5px;
+	position: relative;
+	top: 2px;
+	font-size: 1.5em;
 }
 
 #index #header .contact-info p {
 	color: #aaa;
-	line-height: 8em;
 	margin: 0;
+	font-weight: 300;
+	font-size: .85em;
 }
 
 #index #left-nav {

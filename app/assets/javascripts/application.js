@@ -170,10 +170,11 @@ $(document).ready(function() {
 	});
 
 	function featureclick() {
+		$('#feature-area').css("background","none");
+		$('.feature').css("display", "none");
+		$('.pos-one').clone().appendTo('#feature-area').addClass('feature');
+		$('.feature').removeClass('col-sm-3 pos-one');
 		$('.pos-one').css({"width":"0", "padding":"0"});
-		// setTimeout(function() {
-		// 	$('.pos-one').css("display", "none");
-		// }, 200);
 
 		if($('.pos-one').hasClass('recommended')) {
 			$('#index').removeClass();
@@ -213,7 +214,6 @@ $(document).ready(function() {
 			$('#index').addClass('contact-hover');
 		};
 
-		$('.pos-one').addClass('feature');
 		$('.pos-one').removeClass('pos-one');
 		$('.pos-two').addClass('pos-one');
 		$('.pos-two').removeClass('pos-two');
@@ -274,18 +274,22 @@ $(document).ready(function() {
 		    };
 			
 			if( x == 1 ) {
-				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>We like raising the bar. Often.</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/palo_bg.jpg" /></div></div>');
+				$('.scrollfix').append('<div class="opacity-zero element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>We like raising the bar. Often.</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/palo_bg.jpg" /></div></div>');
 			} else if( x == 2 ) {
-				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>VMWare and Palo Alto Join Forces</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/cartoon_bg.png" /></div></div>');
+				$('.scrollfix').append('<div class="opacity-zero element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>VMWare and Palo Alto Join Forces</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/cartoon_bg.png" /></div></div>');
 			} else if( x == 3 ) {
-				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>Three time Gartner Magic Quadrant leader</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/cartoon_bg.png" /></div></div>');
+				$('.scrollfix').append('<div class="opacity-zero element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>Three time Gartner Magic Quadrant leader</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/cartoon_bg.png" /></div></div>');
 			} else {
-				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>Safetly enable mobile devices</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/server_bg.jpg" /></div></div>');
+				$('.scrollfix').append('<div class="opacity-zero element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>Safetly enable mobile devices</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/server_bg.jpg" /></div></div>');
 			};
 		};
+
+		setTimeout(function() {
+			$('.opacity-zero').removeClass('opacity-zero');
+		}, 300);
 	};
 	
-	$("#feature-area").on("click", function() {
+	$(".nextarrow").on("click", function() {
 		featureclick();
 	});
 

@@ -85,46 +85,46 @@ $(document).ready(function() {
 	/////////////////////////////////////////////////////////////////////////////////////
 	// Click Functions
 	/////////////////////////////////////////////////////////////////////////////////////
-	// $(".section").on("click", function() {
-	// 	if($( this ).hasClass('products')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('products-hover');
-	// 	} else if($( this ).hasClass('recommended')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('recommended-hover')
-	// 	} else if($( this ).hasClass('popular')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('popular-hover')
-	// 	} else if($( this ).hasClass('solutions')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('solutions-hover')
-	// 	} else if($( this ).hasClass('services')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('services-hover');			
-	// 	} else if($( this ).hasClass('partners')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('partners-hover');			
-	// 	} else if($( this ).hasClass('customers')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('customers-hover');			
-	// 	} else if($( this ).hasClass('company')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('company-hover');		
-	// 	} else if($( this ).hasClass('careers')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('careers-hover');			
-	// 	} else if($( this ).hasClass('resources')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('resources-hover');			
-	// 	} else if($( this ).hasClass('support')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('support-hover');		
-	// 	} else if($( this ).hasClass('contact')) {
-	// 		$('#index').removeClass();
-	// 		$('#index').toggleClass('contact-hover');			
-	// 	};
-	// 	$("#index").toggleClass('hover');
-	// });
+	$(".section").on("click", function() {
+		if($( this ).hasClass('products')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('products-hover');
+		} else if($( this ).hasClass('recommended')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('recommended-hover')
+		} else if($( this ).hasClass('popular')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('popular-hover')
+		} else if($( this ).hasClass('solutions')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('solutions-hover')
+		} else if($( this ).hasClass('services')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('services-hover');			
+		} else if($( this ).hasClass('partners')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('partners-hover');			
+		} else if($( this ).hasClass('customers')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('customers-hover');			
+		} else if($( this ).hasClass('company')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('company-hover');		
+		} else if($( this ).hasClass('careers')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('careers-hover');			
+		} else if($( this ).hasClass('resources')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('resources-hover');			
+		} else if($( this ).hasClass('support')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('support-hover');		
+		} else if($( this ).hasClass('contact')) {
+			$('#index').removeClass();
+			$('#index').toggleClass('contact-hover');			
+		};
+		$("#index").toggleClass('hover');
+	});
 
 	$(".nav-list li a").on("click", function() {
 		if($( this ).parent().hasClass('products')) {
@@ -167,6 +167,76 @@ $(document).ready(function() {
 			$('#index').removeClass();			
 		};
 		$("#index").toggleClass('hover');
+	});
+
+	$("#feature-area").on("click", function() {
+		$('.pos-one').css({"width":"0", "padding":"0"});
+		// setTimeout(function() {
+		// 	$('.pos-one').css("display", "none");
+		// }, 200);
+
+		if($('.pos-one').hasClass('recommended')) {
+			$('#index').removeClass();
+			$('#index').addClass('recommended-hover');
+		} else if($('.pos-one').hasClass('popular')) {
+			$('#index').removeClass();
+			$('#index').addClass('popular-hover');
+		} else if($('.pos-one').hasClass('products')) {
+			$('#index').removeClass();
+			$('#index').addClass('products-hover');
+		} else if($('.pos-one').hasClass('services')) {
+			$('#index').removeClass();
+			$('#index').addClass('services-hover');
+		} else if($('.pos-one').hasClass('solutions')) {
+			$('#index').removeClass();
+			$('#index').addClass('solutions-hover');
+		} else if($('.pos-one').hasClass('partners')) {
+			$('#index').removeClass();
+			$('#index').addClass('partners-hover');
+		} else if($('.pos-one').hasClass('customers')) {
+			$('#index').removeClass();
+			$('#index').addClass('customers-hover');
+		} else if($('.pos-one').hasClass('company')) {
+			$('#index').removeClass();
+			$('#index').addClass('company-hover');
+		} else if($('.pos-one').hasClass('careers')) {
+			$('#index').removeClass();
+			$('#index').addClass('careers-hover');
+		} else if($('.pos-one').hasClass('resources')) {
+			$('#index').removeClass();
+			$('#index').addClass('resources-hover');
+		} else if($('.pos-one').hasClass('support')) {
+			$('#index').removeClass();
+			$('#index').addClass('support-hover');
+		} else if($('.pos-one').hasClass('contact')) {
+			$('#index').removeClass();
+			$('#index').addClass('contact-hover');
+		};
+
+		$('.pos-one').addClass('feature');
+		$('.pos-one').removeClass('pos-one');
+		$('.pos-two').addClass('pos-one');
+		$('.pos-two').removeClass('pos-two');
+		$('.pos-three').addClass('pos-two');
+		$('.pos-three').removeClass('pos-three');
+		$('.pos-four').addClass('pos-three');
+		$('.pos-four').removeClass('pos-four');
+		$('.pos-five').addClass('pos-four');
+		$('.pos-five').removeClass('pos-five');
+		$('.pos-six').addClass('pos-five');
+		$('.pos-six').removeClass('pos-six');
+		$('.pos-seven').addClass('pos-six');
+		$('.pos-seven').removeClass('pos-seven');
+		$('.pos-eight').addClass('pos-seven');
+		$('.pos-eight').removeClass('pos-eight');
+		$('.pos-nine').addClass('pos-eight');
+		$('.pos-nine').removeClass('pos-nine');
+		$('.pos-ten').addClass('pos-nine');
+		$('.pos-ten').removeClass('pos-ten');
+		$('.pos-eleven').addClass('pos-ten');
+		$('.pos-eleven').removeClass('pos-eleven');
+		$('.pos-twelve').addClass('pos-eleven');
+		$('.pos-twelve').removeClass('pos-twelve');
 	});
 
 });

@@ -158,7 +158,6 @@ h1, h2, h3, h4, h5, p, span {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
 }
 
 #index.hover #left-nav .nav-list li {
@@ -232,6 +231,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index #feature-area {
+	margin: 0 15px;
 	background: url('/assets/banner.jpg') no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -349,18 +349,17 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .section {
-	padding: 0 15px 0 14em;
+	padding: 0 0px 0 14em;
 	margin: 15px 0 15px -15em;
-	width: 100%;
+	height: 250px;
 	white-space: nowrap;
 	overflow: hidden;
-	position: absolute;
 	bottom: 15px;
 	opacity: 0;
-	-webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 #index .section .scrollfix {
@@ -422,6 +421,10 @@ h1, h2, h3, h4, h5, p, span {
 	padding-top: 0;
 }
 
+/*  DISPLAYED::::NONE  */
+#index .section .hover-right, #index .section .hover-left {
+	display: none;
+}
 
 #index .section .hover-right {
 	width: 15%;
@@ -439,12 +442,12 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .section .element {
-	width: 250px;
+/*	width: 250px;*/
 	height: 250px;
 	vertical-align: top;
-	display: inline-block;
+/*	display: inline-block;
 	margin-bottom: 15px;
-	margin-right: 30px;
+	margin-right: 30px;*/
 	-webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;

@@ -133,15 +133,16 @@ h1, h2, h3, h4, h5, p, span {
   top: 0;
   overflow: auto;
   height: 100%;
+  display: none;
 }
 
-/* line 124, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 125, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #left-nav ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 129, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 130, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #left-nav ul li a {
   text-decoration: none;
   color: #aaa;
@@ -157,12 +158,12 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 144, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 145, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #left-nav ul li a:hover {
   color: #333;
 }
 
-/* line 148, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 149, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #left-nav ul li {
   -webkit-transition: all .1s ease-in-out;
   -moz-transition: all .1s ease-in-out;
@@ -170,16 +171,14 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 155, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 156, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .main-contain {
-  padding-left: 15em;
   padding-top: 8em;
-  position: absolute;
   height: 100%;
   width: 100%;
 }
 
-/* line 171, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 170, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.recommended-hover #left-nav li.nav-recommended, #index.popular-hover #left-nav li.nav-popular,
 #index.products-hover #left-nav li.nav-products, #index.solutions-hover #left-nav li.nav-solutions, #index.services-hover #left-nav li.nav-services,
 #index.partners-hover #left-nav li.nav-partners, #index.customers-hover #left-nav li.nav-customers, #index.company-hover #left-nav li.nav-company,
@@ -188,7 +187,7 @@ h1, h2, h3, h4, h5, p, span {
   background: #eee;
 }
 
-/* line 179, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 178, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.recommended-hover #left-nav .nav-recommended a.parent-link, #index.popular-hover #left-nav .nav-popular a.parent-link,
 #index.products-hover #left-nav .nav-products a.parent-link, #index.solutions-hover #left-nav .nav-solutions a.parent-link, #index.services-hover #left-nav .nav-services a.parent-link,
 #index.partners-hover #left-nav .nav-partners a.parent-link, #index.customers-hover #left-nav .nav-customers a.parent-link, #index.company-hover #left-nav .nav-company a.parent-link,
@@ -198,7 +197,7 @@ h1, h2, h3, h4, h5, p, span {
   color: #333;
 }
 
-/* line 188, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 187, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.recommended-hover #left-nav .nav-recommended a i.chevron, #index.popular-hover #left-nav .nav-popular a i.chevron,
 #index.products-hover #left-nav .nav-products a i.chevron, #index.solutions-hover #left-nav .nav-solutions a i.chevron, #index.services-hover #left-nav .nav-services a i.chevron,
 #index.partners-hover #left-nav .nav-partners a i.chevron, #index.customers-hover #left-nav .nav-customers a i.chevron, #index.company-hover #left-nav .nav-company a i.chevron,
@@ -207,13 +206,13 @@ h1, h2, h3, h4, h5, p, span {
   opacity: 1;
 }
 
-/* line 192, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 191, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #left-nav .nav-list {
   margin-top: 10em;
   position: relative;
 }
 
-/* line 197, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 196, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #left-nav .nav-list li {
   position: relative;
   top: 0;
@@ -225,12 +224,12 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .2s ease-in-out;
 }
 
-/* line 208, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 207, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #left-nav .nav-list li:last-child {
   border-bottom: 2px solid #fafafa;
 }
 
-/* line 212, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 211, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #left-nav .nav-list li a i.chevron {
   float: right;
   position: relative;
@@ -242,20 +241,16 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .2s ease-in-out;
 }
 
-/* line 223, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 222, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .feature-row {
-  position: fixed;
-  padding-left: 15em;
   padding-bottom: 2em;
+  margin: 0 15px;
   background: #fff;
-  width: 100%;
   z-index: 7;
-  left: 0;
 }
 
-/* line 233, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 229, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #feature-area {
-  margin: 0 15px;
   background: url("/assets/banner.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -268,91 +263,91 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .5s;
 }
 
-/* line 247, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 242, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.recommended-hover #feature-area {
   background: url("/assets/feature_recommended.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 252, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 247, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.popular-hover #feature-area {
   background: url("/assets/feature_popular.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 257, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 252, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.products-hover #feature-area {
   background: url("/assets/feature_products.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 262, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 257, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.solutions-hover #feature-area {
   background: url("/assets/feature_solutions.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 267, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 262, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.services-hover #feature-area {
   background: url("/assets/feature_services.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 272, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 267, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.partners-hover #feature-area {
   background: url("/assets/feature_partners.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 277, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 272, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.customers-hover #feature-area {
   background: url("/assets/feature_customers.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 282, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 277, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.company-hover #feature-area {
   background: url("/assets/feature_company.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 287, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 282, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.careers-hover #feature-area {
   background: url("/assets/feature_careers.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 292, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 287, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.resources-hover #feature-area {
   background: url("/assets/feature_resources.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 297, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 292, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.support-hover #feature-area {
   background: url("/assets/feature_support.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 302, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 297, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.contact-hover #feature-area {
   background: url("/assets/feature_contact.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* line 308, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 303, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #feature-area .info-section {
   width: 400px;
   height: 200px;
@@ -363,7 +358,7 @@ h1, h2, h3, h4, h5, p, span {
   background: rgba(0, 0, 0, 0.75);
 }
 
-/* line 318, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 313, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #feature-area .info-section h2 {
   color: #fff;
   font-weight: 700;
@@ -373,13 +368,13 @@ h1, h2, h3, h4, h5, p, span {
   line-height: 1.5em;
 }
 
-/* line 327, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 322, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #feature-area .info-section p {
   color: #fff;
   padding-top: 15px;
 }
 
-/* line 332, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 327, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #feature-area .info-section .call {
   width: 70%;
   font-size: 1.2em;
@@ -395,27 +390,23 @@ h1, h2, h3, h4, h5, p, span {
   cursor: pointer;
 }
 
-/* line 347, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 342, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #feature-area img {
   width: 100%;
 }
 
-/* line 351, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 346, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section {
-  padding: 0 0px 0 14em;
-  margin: 15px 0 15px -15em;
-  height: 250px;
+  padding: 0;
+  margin: 15px 0 15px 0;
   white-space: nowrap;
-  overflow: hidden;
-  bottom: 15px;
-  opacity: 0;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
 }
 
-/* line 365, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 356, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .scrollfix {
   overflow: auto;
   width: 100%;
@@ -428,7 +419,7 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 377, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 368, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left {
   background: rgba(167, 192, 144, 0.35);
   width: 15%;
@@ -444,12 +435,12 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 392, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 383, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left:hover {
   opacity: .5;
 }
 
-/* line 396, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 387, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left h1 {
   color: #a7c090;
   margin-top: 3em;
@@ -460,14 +451,14 @@ h1, h2, h3, h4, h5, p, span {
   white-space: normal;
 }
 
-/* line 406, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 397, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right h1 {
   margin: 0;
   font-size: 1.25em;
   color: #fff;
 }
 
-/* line 412, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 403, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left i, #index .section .hover-right i {
   font-size: 3.5em;
   padding-top: .5em;
@@ -475,19 +466,19 @@ h1, h2, h3, h4, h5, p, span {
   text-align: center;
 }
 
-/* line 419, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 410, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right i {
   line-height: 250px;
   padding-top: 0;
 }
 
 /*  DISPLAYED::::NONE  */
-/* line 425, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 416, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right, #index .section .hover-left {
   display: none;
 }
 
-/* line 429, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 420, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right {
   width: 15%;
   height: 100%;
@@ -503,21 +494,21 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 444, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 435, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .element {
   /*	width: 250px;*/
-  height: 250px;
+  height: 150px;
   vertical-align: top;
+  margin-top: 15px;
   /*	display: inline-block;
-  	margin-bottom: 15px;
   	margin-right: 30px;*/
-  -webkit-transition: all .1s ease-in-out;
-  -moz-transition: all .1s ease-in-out;
-  -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
-/* line 457, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 448, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .box {
   height: 100%;
   width: 100%;
@@ -531,7 +522,7 @@ h1, h2, h3, h4, h5, p, span {
   transition: all .1s ease-in-out;
 }
 
-/* line 470, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 461, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .box h1 {
   margin-top: 0;
   float: left;
@@ -540,7 +531,7 @@ h1, h2, h3, h4, h5, p, span {
   text-transform: uppercase;
 }
 
-/* line 478, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 469, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .info-section {
   width: 100%;
   height: 150px;
@@ -552,7 +543,7 @@ h1, h2, h3, h4, h5, p, span {
   background: rgba(0, 0, 0, 0.75);
 }
 
-/* line 489, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 480, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .info-section h2 {
   color: #fff;
   font-weight: 700;
@@ -562,7 +553,7 @@ h1, h2, h3, h4, h5, p, span {
   line-height: 1.3em;
 }
 
-/* line 498, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 489, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .info-section p {
   color: #cacaca;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -571,7 +562,7 @@ h1, h2, h3, h4, h5, p, span {
   font-size: .8em;
 }
 
-/* line 506, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 497, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .info-section .call {
   width: 70%;
   font-size: 1.2em;
@@ -587,30 +578,30 @@ h1, h2, h3, h4, h5, p, span {
   cursor: pointer;
 }
 
-/* line 521, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 512, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .info-section .call:hover {
   opacity: .75;
 }
 
-/* line 525, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 516, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .info-section .call i {
   font-size: .8em;
   padding-left: 10px;
 }
 
-/* line 530, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 521, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .box img {
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 
-/* line 534, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 525, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .lead-box {
   background: #fff;
   padding: 15px;
 }
 
-/* line 539, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 530, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left:hover {
   background: -moz-linear-gradient(right, rgba(146, 170, 93, 0) 0%, #92aa5d 99%);
   /* FF3.6+ */
@@ -626,7 +617,7 @@ h1, h2, h3, h4, h5, p, span {
   /* W3C */
 }
 
-/* line 548, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 539, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-right:hover {
   background: -moz-linear-gradient(left, rgba(146, 170, 93, 0) 0%, #92aa5d 99%);
   /* FF3.6+ */
@@ -642,22 +633,22 @@ h1, h2, h3, h4, h5, p, span {
   /* W3C */
 }
 
-/* line 557, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 548, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .section .hover-left:hover i, #index .section .hover-right:hover i, #index .section .hover-left:hover h1 {
   color: #fff;
 }
 
-/* line 561, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 552, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.hover .section .scrollfix {
   opacity: .2;
 }
 
-/* line 565, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 556, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index #row-recommended {
-  margin-top: 325px;
+  margin-top: 290px;
 }
 
-/* line 573, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 565, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.recommended-hover .section.recommended .hover-left, #index.popular-hover .section.popular .hover-left,
 #index.products-hover .section.products .hover-left, #index.solutions-hover .section.solutions .hover-left, #index.services-hover .section.services .hover-left,
 #index.partners-hover .section.partners .hover-left, #index.customers-hover .section.customers .hover-left, #index.company-hover .section.company .hover-left,
@@ -666,7 +657,7 @@ h1, h2, h3, h4, h5, p, span {
   background: #99CC4C;
 }
 
-/* line 581, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 573, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.recommended-hover .section.recommended, #index.popular-hover .section.popular,
 #index.products-hover .section.products, #index.solutions-hover .section.solutions, #index.services-hover .section.services,
 #index.partners-hover .section.partners, #index.customers-hover .section.customers, #index.company-hover .section.company,
@@ -675,7 +666,7 @@ h1, h2, h3, h4, h5, p, span {
   opacity: 1;
 }
 
-/* line 589, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 581, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index.recommended-hover .section.recommended .scrollfix, #index.popular-hover .section.popular .scrollfix,
 #index.products-hover .section.products .scrollfix, #index.solutions-hover .section.solutions .scrollfix, #index.services-hover .section.services .scrollfix,
 #index.partners-hover .section.partners .scrollfix, #index.customers-hover .section.customers .scrollfix, #index.company-hover .section.company .scrollfix,
@@ -684,7 +675,7 @@ h1, h2, h3, h4, h5, p, span {
   opacity: 1;
 }
 
-/* line 601, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 593, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer {
   width: 100%;
   background: #eee;
@@ -693,36 +684,36 @@ footer {
   z-index: 25;
 }
 
-/* line 609, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 601, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer p, footer span {
   color: #aaa;
   margin: 0;
 }
 
-/* line 614, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 606, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .footer-links {
   list-style-type: none;
   margin: 0;
 }
 
-/* line 619, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 611, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .footer-links li {
   padding: 0 10px;
   display: inline-block;
 }
 
-/* line 624, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 616, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .footer-links li a {
   color: #aaa;
   text-decoration: none;
 }
 
-/* line 630, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 622, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .footer-links li a:hover {
   opacity: .5;
 }
 
-/* line 634, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 626, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer i {
   padding-right: 10px;
 }

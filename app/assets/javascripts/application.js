@@ -239,19 +239,48 @@ $(document).ready(function() {
 		$('.pos-twelve').removeClass('pos-twelve');
 
 		var x = 0;
-		random(x);
+		var y = 0;
+		random(x, y);
 
 		function random(x) {
 		    x = Math.floor((Math.random() * 4) + 1);
+		    y = Math.floor((Math.random() * 12) + 1);
+		    var classname;
+
+		    if( y == 1 ) {
+		    	var classname=" recommended";
+		    } else if( y == 2 ) {
+		    	var classname=" popular";
+		    } else if( y == 3 ) {
+		    	var classname=" products";
+		    } else if( y == 4 ) {
+		    	var classname=" services";
+		    } else if( y == 5 ) {
+		    	var classname=" solutions";
+		    } else if( y == 6 ) {
+		    	var classname=" partners";
+		    } else if( y == 7 ) {
+		    	var classname=" customers";
+		    } else if( y == 8 ) {
+		    	var classname=" company";
+		    } else if( y == 9 ) {
+		    	var classname=" careers";
+		    } else if( y == 10 ) {
+		    	var classname=" resources";
+		    } else if( y == 11 ) {
+		    	var classname=" support";
+		    } else if( y == 12 ) {
+		    	var classname=" contact";
+		    };
 			
 			if( x == 1 ) {
-				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve contact"><div class="box"><div class="info-section"><h2>We like raising the bar. Often.</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/palo_bg.jpg" /></div></div>');
+				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>We like raising the bar. Often.</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/palo_bg.jpg" /></div></div>');
 			} else if( x == 2 ) {
-				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve contact"><div class="box"><div class="info-section"><h2>VMWare and Palo Alto Join Forces</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/cartoon_bg.png" /></div></div>');
+				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>VMWare and Palo Alto Join Forces</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/cartoon_bg.png" /></div></div>');
 			} else if( x == 3 ) {
-				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve contact"><div class="box"><div class="info-section"><h2>Three time Gartner Magic Quadrant leader</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/cartoon_bg.png" /></div></div>');
+				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>Three time Gartner Magic Quadrant leader</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/cartoon_bg.png" /></div></div>');
 			} else {
-				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve contact"><div class="box"><div class="info-section"><h2>Safetly enable mobile devices</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/server_bg.jpg" /></div></div>');
+				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve'+ classname +'"><div class="box"><div class="info-section"><h2>Safetly enable mobile devices</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/server_bg.jpg" /></div></div>');
 			};
 		};
 	};

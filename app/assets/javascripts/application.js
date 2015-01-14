@@ -85,46 +85,46 @@ $(document).ready(function() {
 	/////////////////////////////////////////////////////////////////////////////////////
 	// Click Functions
 	/////////////////////////////////////////////////////////////////////////////////////
-	$(".section").on("click", function() {
-		if($( this ).hasClass('products')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('products-hover');
-		} else if($( this ).hasClass('recommended')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('recommended-hover')
-		} else if($( this ).hasClass('popular')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('popular-hover')
-		} else if($( this ).hasClass('solutions')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('solutions-hover')
-		} else if($( this ).hasClass('services')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('services-hover');			
-		} else if($( this ).hasClass('partners')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('partners-hover');			
-		} else if($( this ).hasClass('customers')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('customers-hover');			
-		} else if($( this ).hasClass('company')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('company-hover');		
-		} else if($( this ).hasClass('careers')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('careers-hover');			
-		} else if($( this ).hasClass('resources')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('resources-hover');			
-		} else if($( this ).hasClass('support')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('support-hover');		
-		} else if($( this ).hasClass('contact')) {
-			$('#index').removeClass();
-			$('#index').toggleClass('contact-hover');			
-		};
-		$("#index").toggleClass('hover');
-	});
+	// $(".section").on("click", function() {
+	// 	if($( this ).hasClass('products')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('products-hover');
+	// 	} else if($( this ).hasClass('recommended')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('recommended-hover')
+	// 	} else if($( this ).hasClass('popular')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('popular-hover')
+	// 	} else if($( this ).hasClass('solutions')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('solutions-hover')
+	// 	} else if($( this ).hasClass('services')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('services-hover');			
+	// 	} else if($( this ).hasClass('partners')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('partners-hover');			
+	// 	} else if($( this ).hasClass('customers')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('customers-hover');			
+	// 	} else if($( this ).hasClass('company')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('company-hover');		
+	// 	} else if($( this ).hasClass('careers')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('careers-hover');			
+	// 	} else if($( this ).hasClass('resources')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('resources-hover');			
+	// 	} else if($( this ).hasClass('support')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('support-hover');		
+	// 	} else if($( this ).hasClass('contact')) {
+	// 		$('#index').removeClass();
+	// 		$('#index').toggleClass('contact-hover');			
+	// 	};
+	// 	$("#index").toggleClass('hover');
+	// });
 
 	$(".nav-list li a").on("click", function() {
 		if($( this ).parent().hasClass('products')) {
@@ -169,7 +169,7 @@ $(document).ready(function() {
 		$("#index").toggleClass('hover');
 	});
 
-	$("#feature-area").on("click", function() {
+	function featureclick() {
 		$('.pos-one').css({"width":"0", "padding":"0"});
 		// setTimeout(function() {
 		// 	$('.pos-one').css("display", "none");
@@ -253,7 +253,19 @@ $(document).ready(function() {
 			} else {
 				$('.scrollfix').append('<div class="element col-sm-3 pos-twelve contact"><div class="box"><div class="info-section"><h2>Safetly enable mobile devices</h2><p>Learn more about the event by clicking below.</p><div class="call"><span>View Report</span><i class="fa fa-chevron-right"></i></div></div><img src="/assets/server_bg.jpg" /></div></div>');
 			};
-		}
+		};
+	};
+	
+	$("#feature-area").on("click", function() {
+		featureclick();
+	});
+
+	$('#shuffle').on("click", function() {
+		var i = 0;
+		while (i < 40) {
+			featureclick();
+			i++;
+		};
 	});
 
 });

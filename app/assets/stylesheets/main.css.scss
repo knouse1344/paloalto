@@ -119,6 +119,7 @@ h1, h2, h3, h4, h5, p, span {
 	top:0;
 	overflow: auto;
 	height: 100%;
+	display: none;
 }
 
 #index #left-nav ul {
@@ -153,9 +154,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .main-contain {
-	padding-left: 15em;
 	padding-top: 8em;
-	position: absolute;
 	height: 100%;
 	width: 100%;
 }
@@ -221,17 +220,12 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index .feature-row {
-	position: fixed;
-	padding-left: 15em;
 	padding-bottom: 2em;
 	background: #fff;
-	width: 100%;
 	z-index: 7;
-	left: 0;
 }
 
 #index #feature-area {
-	margin: 0 15px;
 	background: url('/assets/banner.jpg') no-repeat;
 	background-size: cover;
 	background-position: center;

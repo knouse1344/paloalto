@@ -170,17 +170,7 @@ h1, h2, h3, h4, h5, p, span {
 #index.partners-hover #left-nav li.nav-partners, #index.customers-hover #left-nav li.nav-customers, #index.company-hover #left-nav li.nav-company,
 #index.careers-hover #left-nav li.nav-careers, #index.resources-hover #left-nav li.nav-resources, #index.support-hover #left-nav li.nav-support,
 #index.contact-hover #left-nav li.nav-contact {
-	background: #fafafa;
-	border-top: 2px solid #ddd;
-	border-bottom: 2px solid #ddd;
-}
-
-#index.recommended-hover #left-nav li.nav-recommended ul, #index.popular-hover #left-nav li.nav-popular ul,
-#index.products-hover #left-nav li.nav-products ul, #index.solutions-hover #left-nav li.nav-solutions ul, #index.services-hover #left-nav li.nav-services ul, 
-#index.partners-hover #left-nav li.nav-partners ul, #index.customers-hover #left-nav li.nav-customers ul, #index.company-hover #left-nav li.nav-company ul,
-#index.careers-hover #left-nav li.nav-careers ul, #index.resources-hover #left-nav li.nav-resources ul, #index.support-hover #left-nav li.nav-support ul,
-#index.contact-hover #left-nav li.nav-contact ul {
-	height: 120px;
+	background: #eee;
 }
 
 #index.recommended-hover #left-nav .nav-recommended a.parent-link, #index.popular-hover #left-nav .nav-popular a.parent-link,
@@ -197,11 +187,7 @@ h1, h2, h3, h4, h5, p, span {
 #index.partners-hover #left-nav .nav-partners a i.chevron, #index.customers-hover #left-nav .nav-customers a i.chevron, #index.company-hover #left-nav .nav-company a i.chevron,
 #index.careers-hover #left-nav .nav-careers a i.chevron, #index.resources-hover #left-nav .nav-resources a i.chevron, #index.support-hover #left-nav .nav-support a i.chevron,
 #index.contact-hover #left-nav .nav-contact a i.chevron {
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
+	opacity: 1;
 }
 
 #index #left-nav .nav-list {
@@ -227,36 +213,12 @@ h1, h2, h3, h4, h5, p, span {
 #index #left-nav .nav-list li a i.chevron {
 	float: right;
 	position: relative;
-	top: 1px;
+	top: 4px;
+	opacity: 0;
 	-webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-}
-
-#index #left-nav .nav-list li ul {
-	height: 0px;
-	overflow: hidden;
-	-webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-#index #left-nav .nav-list li ul.secondary-list li a i {
-	float: left;
-	position: relative;
-	top: 3px;
-	margin-right: 2em;
-}
-
-#index #left-nav .nav-list li ul.secondary-list li a {
-	font-weight: 300;
-	font-size: .7em;
-}
-
-#index #left-nav .nav-list li ul.secondary-list li a:hover {
-	color: #000;
 }
 
 #index .feature-row {

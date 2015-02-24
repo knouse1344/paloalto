@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, p, span {
 		position: fixed;
 		width: 100%;
 		z-index: 10;
+		border-bottom: 1px solid #ddd;
 	}
 
 	/* MOCKUP IMAGE CSS */
@@ -54,37 +55,13 @@ h1, h2, h3, h4, h5, p, span {
 	line-height: 100px;
 }
 
-#shuffle {
-	width: 100px;
-	height: 100px;
-	left: 50%;
-	top: 300px;
-	margin-left: -50px;
-	background: #ccc;
-	z-index: 21525235;
-	box-shadow: 0 0 10px #333;
-	position: absolute;
-	text-align: center;
-	opacity: .7;
-	cursor: pointer;
-}
-
-#shuffle i {
-	line-height: 100px;
-	font-size: 60px;
-}
-
-#shuffle:hover {
-	opacity: 1;
-}
-
 #index #header #logo {
-	width: 190px;
+	width: 150px;
 	display: inline;
 }
 
 #index #header .vertical-center {
-	line-height: 8em;
+	line-height: 5em;
 	position: relative;
 }
 
@@ -99,8 +76,8 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 #index #header .btn-group {
-	line-height: 8em;
-	height: 8em;
+	line-height: 5em;
+	height: 5em;
 }
 
 #index #header .btn-group .fb-icon {
@@ -116,7 +93,7 @@ h1, h2, h3, h4, h5, p, span {
 	color: #666;
 	background: transparent;
 	box-shadow: none;
-	line-height: 8em;
+	line-height: 5em;
 	padding: 0 15px;
 }
 
@@ -148,7 +125,7 @@ h1, h2, h3, h4, h5, p, span {
 #index #header .contact-info {
 	white-space: nowrap;
 	text-align: right;
-	line-height: 8em;
+	line-height: 5em;
 }
 
 #index #header .contact-info i {
@@ -212,7 +189,6 @@ h1, h2, h3, h4, h5, p, span {
 #index .main-contain {
 	padding-top: 8em;
 	height: 100%;
-	width: 100%;
 }
 
 #index.hover #left-nav .nav-list li {
@@ -490,9 +466,10 @@ h1, h2, h3, h4, h5, p, span {
 
 #index .section .element {
 /*	width: 250px;*/
-	height: 150px;
+	height: 250px;
 	vertical-align: top;
-	margin-top: 15px;
+	margin: 15px 15px 0;
+	padding: 0;
 /*	display: inline-block;
 	margin-right: 30px;*/
 	-webkit-transition: all .25s ease-in-out;

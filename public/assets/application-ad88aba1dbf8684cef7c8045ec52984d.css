@@ -137,14 +137,15 @@ body #header {
 
 /* line 124, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .feature-img .box {
-  padding: 1em;
+  padding: 1em 1em 3em 1em;
   background: rgba(0, 0, 0, 0.5);
   width: 24em;
   margin-top: 5em;
+  position: relative;
   float: right;
 }
 
-/* line 132, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 133, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .feature-img .box h1 {
   text-transform: uppercase;
   color: #fff;
@@ -153,35 +154,51 @@ body #header {
   font-weight: 700;
 }
 
-/* line 140, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 141, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .feature-img .box p {
   color: #fff;
 }
 
-/* line 144, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 145, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+#index .feature-img .box .learn-more {
+  background: #006fa2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .25em 1.5em;
+}
+
+/* line 159, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured {
   padding-top: 3em;
 }
 
-/* line 148, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 163, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured-row {
   padding-bottom: 5em;
 }
 
-/* line 152, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 167, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .row-title {
   font-size: 1.5em;
   text-transform: uppercase;
   padding-bottom: 1em;
 }
 
-/* line 158, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 173, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .box {
   padding: 1em;
+  min-height: 30em;
   position: relative;
 }
 
-/* line 163, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 179, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .box i {
   position: absolute;
   top: .75em;
@@ -190,16 +207,18 @@ body #header {
   font-size: 1.35em;
 }
 
-/* line 171, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 187, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .box h1 {
   font-weight: 400;
-  width: 65%;
+  width: 70%;
+  margin-top: 0;
+  text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 3em;
   padding-bottom: 3em;
 }
 
-/* line 179, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 197, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .box h1 .white {
   color: #fff;
   font-weight: 400;
@@ -207,43 +226,71 @@ body #header {
   font-size: 1em;
 }
 
-/* line 186, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 204, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+#index .featured .box h1 .text-blue {
+  color: #006fa2;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+}
+
+/* line 211, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .orange {
   background: #f7933e;
 }
 
-/* line 190, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 215, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .blue {
   background: #67d0ee;
 }
 
-/* line 194, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 219, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .gray {
   background: #e6e2e1;
 }
 
-/* line 198, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 223, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+#index .featured .green {
+  background: #99a700;
+}
+
+/* line 227, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+#index .featured .gold {
+  background: #f3b927;
+}
+
+/* line 231, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .overlay {
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1em 1em 3em;
+  height: 8em;
+  padding: 1em 1em;
 }
 
-/* line 207, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 241, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+#index .featured .overlay h2 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+/* line 248, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .overlay p {
   margin: 0;
 }
 
-/* line 211, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 252, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .overlay .learn-more {
   background: #006fa2;
   position: absolute;
   bottom: 0;
   right: 0;
   color: #fff;
+  cursor: pointer;
   font-size: 1em;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -251,14 +298,14 @@ body #header {
   padding: .25em 1.5em;
 }
 
-/* line 224, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 266, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .information {
   margin-top: 1.5em;
   border-bottom: 1px solid #ccc;
   font-size: 1em;
 }
 
-/* line 230, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 272, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .information h4 {
   display: block;
   color: #000;
@@ -268,43 +315,43 @@ body #header {
   margin-bottom: 0;
 }
 
-/* line 239, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 281, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .information p {
   float: left;
   font-size: 1em;
   color: #999;
 }
 
-/* line 245, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 287, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .information .icons {
   float: right;
   color: #999;
 }
 
-/* line 250, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 292, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .information .icons span {
   margin-left: 1em;
 }
 
-/* line 254, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 296, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .information .icons span i {
   margin-left: .4em;
 }
 
-/* line 258, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 300, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .login {
   color: #999;
   padding-top: .75em;
 }
 
-/* line 263, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 305, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 #index .featured .login i {
   float: right;
   margin-top: .2em;
   font-size: 1.25em;
 }
 
-/* line 270, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 312, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer {
   width: 100%;
   background: #e1dfe8;
@@ -313,52 +360,52 @@ footer {
   z-index: 25;
 }
 
-/* line 278, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 320, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 html body footer h1 {
   font-size: 1.25em;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
 }
 
-/* line 284, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 326, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 290, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 332, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .mythbusters {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* line 296, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 338, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .ignite {
   position: relative;
   background: #000;
   height: 72px;
 }
 
-/* line 302, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 344, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .ignite .ignite-logo {
   padding-top: 15px;
 }
 
-/* line 306, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 348, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .social i {
   display: block;
   font-size: 2em;
   padding: .3em .3em .3em 0;
 }
 
-/* line 312, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 354, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .subscribe .email-input {
   position: relative;
 }
 
-/* line 316, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 358, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .subscribe .email-input .add {
   padding: 0em 1em;
   background: #000;
@@ -369,7 +416,7 @@ footer .subscribe .email-input .add {
   height: 100%;
 }
 
-/* line 326, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 368, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .subscribe .email-input .add span {
   font-size: 1.3em;
   line-height: 2em;
@@ -377,19 +424,19 @@ footer .subscribe .email-input .add span {
   text-transform: uppercase;
 }
 
-/* line 333, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 375, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .subscribe .email-input input {
   width: 100%;
   border: 1px solid #000;
   padding: .5em;
 }
 
-/* line 339, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 381, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .about p {
   padding-right: 3em;
 }
 
-/* line 343, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
+/* line 385, /Users/Bryan/Desktop/projects/palo/app/assets/stylesheets/main.css.scss */
 footer .credits {
   margin-top: 4em;
 }

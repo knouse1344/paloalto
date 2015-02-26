@@ -204,6 +204,7 @@ body {
 	background: rgba(255,255,255,.5);
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	width: 100%;
 	padding: 1em 1em 3em;
 }
@@ -274,36 +275,17 @@ body {
 footer {
 	width: 100%;
 	background: #eee;
-	line-height: 4em;
+	padding-bottom: 4em;
 	position: relative;
 	z-index: 25;
 }
 
-footer p, footer span {
-	color: #aaa;
-	margin: 0;
-}
-
-footer .footer-links {
+footer ul {
 	list-style-type: none;
 	margin: 0;
+	padding: 0;
 }
 
-footer .footer-links li {
-	padding: 0 10px;
-	display: inline-block;
-}
-
-footer .footer-links li a {
-	color: #aaa;
-	text-decoration: none;
-}
-
-
-footer .footer-links li a:hover {
-	opacity: .5;
-}
-
-footer i {
-	padding-right: 10px;
+footer .ignite {
+	background: #000;
 }

@@ -150,6 +150,10 @@ body {
 	padding-top: 3em;
 }
 
+#index .featured-row {
+	padding-bottom: 5em;
+}
+
 #index .featured .row-title {
 	font-size: 1.5em;
 	text-transform: uppercase;
@@ -171,9 +175,10 @@ body {
 
 #index .featured .box h1 {
 	font-weight: 400;
+	width: 65%;
 	font-family: 'Oswald', sans-serif;
 	font-size: 3em;
-	padding-bottom: 5em;
+	padding-bottom: 3em;
 }
 
 #index .featured .box h1 .white {
@@ -196,7 +201,7 @@ body {
 }
 
 #index .featured .overlay {
-	background: rgba(255,255,255,.25);
+	background: rgba(255,255,255,.5);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -221,7 +226,8 @@ body {
 }
 
 #index .featured .information {
-	border-bottom: 2px solid #ccc;
+	margin-top: 1.5em;
+	border-bottom: 1px solid #ccc;
 	font-size: 1em;
 }
 

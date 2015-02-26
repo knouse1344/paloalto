@@ -2,8 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1, h2, h3, h4, h5, p, span {
-	font-family: 'Lato', sans-serif !important;
+html body h1, html body h2, html body h3, html body h4, html body h5, html body p, html body span {
+	font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -12,6 +12,8 @@ body {
 	#header {
 		background: #fff;
 		position: fixed;
+		top: 0;
+		left: 0;
 		width: 100%;
 		z-index: 10;
 		border-bottom: 1px solid #ddd;
@@ -23,6 +25,9 @@ body {
 	}
 }
 
+.clear {
+	clear: both;
+}
 
 #index #header #logo {
 	width: 150px;
@@ -112,14 +117,153 @@ body {
 }
 
 
-#index .feature {
+#index .feature-img {
 	background: url('/assets/header_feature.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 25em;
-	margin-top: 6em;
+	height: 35em;
+	margin-top: 5em;
 }
+
+#index .feature-img .box {
+	padding: 1em;
+	background: rgba(0,0,0,.5);
+	width: 24em;
+	margin-top: 5em;
+	float: right;
+}
+
+#index .feature-img .box h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 3.5em;
+	margin-top: 0;
+	font-weight: 700;
+}
+
+#index .feature-img .box p {
+	color: #fff;
+}
+
+#index .featured {
+	padding-top: 3em;
+}
+
+#index .featured .row-title {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding-bottom: 1em;
+}
+
+#index .featured .box {
+	padding: 1em;
+	position: relative;
+}
+
+#index .featured .box i {
+	position: absolute;
+	top: .75em;
+	right: .75em;
+	color: #fff;
+	font-size: 1.35em;
+}
+
+#index .featured .box h1 {
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	padding-bottom: 5em;
+}
+
+#index .featured .box h1 .white {
+	color: #fff;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+}
+
+#index .featured .orange {
+	background: #f7933e;
+}
+
+#index .featured .blue {
+	background: #67d0ee;
+}
+
+#index .featured .gray {
+	background: #e6e2e1;
+}
+
+#index .featured .overlay {
+	background: rgba(255,255,255,.25);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 1em 1em 3em;
+}
+
+#index .featured .overlay p {
+	margin: 0;
+}
+
+#index .featured .overlay .learn-more {
+	background: #006fa2;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	font-size: 1em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: .25em 1.5em;
+}
+
+#index .featured .information {
+	border-bottom: 2px solid #ccc;
+	font-size: 1em;
+}
+
+#index .featured .information h4 {
+	display: block;
+	color: #000;
+	font-weight: 700;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	margin-bottom: 0;
+}
+
+#index .featured .information p {
+	float: left;
+	font-size: 1em;
+	color: #999;
+}
+
+#index .featured .information .icons {
+	float: right;
+	color: #999;
+}
+
+#index .featured .information .icons span {
+	margin-left: 1em;
+}
+
+#index .featured .information .icons span i {
+	margin-left: .4em;
+}
+
+#index .featured .login {
+	color: #999;
+	padding-top: .75em;
+}
+
+#index .featured .login i {
+	float: right;
+	margin-top: .2em;
+	font-size: 1.25em;
+}
+
 
 footer {
 	width: 100%;

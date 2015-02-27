@@ -111,26 +111,81 @@ body {
 	font-size: .85em;
 }
 
+#index .feature-viewport {
+	width: 100%;
+	height: 35em;
+	margin-top: 5em;
+	position: relative;
+}
 
-#index .feature-img {
+#index .feature-viewport .feature {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 35em;
+	opacity: 0;
+	-webkit-transition: all .25s; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all .25s;
+	-o-transition: all .25s;
+    transition: all .25s;
+}
+
+#index .feature-viewport .feature .description {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+	position: absolute;
+	left: 40%;
+	margin-left: -25%;
+	top: 6em;
+}
+
+#index .feature-viewport .home-1 {
 	background: url('/assets/header_feature.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 35em;
-	margin-top: 5em;
+	opacity: 1;
 }
 
-#index .feature-img .box {
+#index .feature-viewport .home-2 {
+	background: #f7933e;
+}
+
+#index .feature-viewport .home-3 {
+	background: #67d0ee;
+}
+
+#index .feature-viewport .home-4 {
+	background: #e6e2e1;
+}
+
+#index .feature-viewport .home-5 {
+	background: #99a700;
+}
+
+#index .feature-viewport .home-6 {
+	background: #e6e2e1;
+}
+
+#index .feature-viewport .home-7 {
+	background: #f3b927;
+}
+
+#index .feature-viewport .box {
 	padding: 1em 1em 3em 1em;
 	background: rgba(0,0,0,.5);
-	width: 24em;
+	width: 25em;
 	margin-top: 5em;
+	margin-right: 2em;
 	position: relative;
 	float: right;
 }
 
-#index .feature-img .box h1 {
+#index .feature-viewport .box h1 {
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 3.5em;
@@ -138,11 +193,11 @@ body {
 	font-weight: 700;
 }
 
-#index .feature-img .box p {
+#index .feature-viewport .box p {
 	color: #fff;
 }
 
-#index .feature-img .box .learn-more {
+#index .feature-viewport .box .learn-more {
 	background: #006fa2;
 	position: absolute;
 	bottom: 0;
@@ -182,6 +237,15 @@ body {
 	right: .75em;
 	color: #fff;
 	font-size: 1.35em;
+	cursor: pointer;
+}
+
+#index .featured .box .fa-star {
+	opacity: 0;
+}
+
+#index .featured .box i:hover {
+	opacity: 1;
 }
 
 #index .featured .box h1 {
@@ -190,7 +254,7 @@ body {
 	margin-top: 0;
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
-	font-size: 3em;
+	font-size: 2.5em;
 	padding-bottom: 3em;
 }
 
@@ -263,6 +327,10 @@ body {
 	padding: .25em 1.5em;
 }
 
+#index .featured .overlay .learn-more:hover {
+	opacity: .6;
+}
+
 #index .featured .information {
 	margin-top: 1.5em;
 	border-bottom: 1px solid #ccc;
@@ -327,6 +395,11 @@ footer ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	white-space: nowrap;
+}
+
+footer ul li a {
+	color: #000;
 }
 
 footer .mythbusters {

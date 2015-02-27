@@ -11558,6 +11558,7 @@ return jQuery;
 
 $(document).ready(function() {
 
+
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		  var target = $(this.hash);
@@ -11841,3 +11842,17 @@ $(document).ready(function() {
 	});
 
 });
+
+
+function featureRoll(item) {
+	var selected = $('.'+item);
+
+	$(".feature-viewport .feature").css("opacity", "0");
+	$(selected).css("opacity", "1");
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+}
+
+
+
+
+;

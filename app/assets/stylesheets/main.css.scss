@@ -138,7 +138,7 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	top: 0;
+	top: -40%;
 	left: 0;
 	-webkit-transition: all .75s ease-in-out; /* For Safari 3.1 to 6.0 */
 	-moz-transition: all .75s ease-in-out;
@@ -163,8 +163,13 @@ body {
 	opacity: 1;
 }
 
+#index .feature-viewport .active .background-img {
+	top: 0%;
+}
+
 #index .feature-viewport .active-down {
 	top:0;
+	display: block;
 	opacity: 1;
 }
 
@@ -218,20 +223,20 @@ body {
 }
 
 #index .feature-viewport .box {
-	padding: 1em 1em 3em 1em;
+	padding: 4em 1em 4em 1em;
 	background: rgba(0,0,0,.5);
 	width: 25em;
-	margin-top: 5em;
 	margin-right: 2em;
 	position: relative;
 	float: right;
 	z-index: 2;
+	height: 100%;
 }
 
 #index .feature-viewport .box h1 {
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 3.5em;
+	font-size: 3em;
 	margin-top: 0;
 	font-weight: 700;
 }
@@ -241,32 +246,44 @@ body {
 }
 
 #index .feature-viewport .box .next {
-	background: #006fa2;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	left: 50%;
+	width: 50%;
+	margin-left: -25%;
 	color: #fff;
 	cursor: pointer;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: .25em 1.5em;	
+	text-align: center;
+	padding: .75em 1.5em;	
 }
 
 #index .feature-viewport .box .previous {
-	background: #006fa2;
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	margin-left: -25%;
 	color: #fff;
 	cursor: pointer;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: .25em 1.5em;
+	text-align: center;
+	padding: .75em 1.5em;
 
+}
+
+#index .feature-viewport .box .next i, #index .feature-viewport .box .previous i {
+	margin-left: 15px;
+}
+
+#index .feature-viewport .box .previous:hover, #index .feature-viewport .box .next:hover {
+	opacity: .5;
 }
 
 #index .feature-viewport .box .learn-more {
